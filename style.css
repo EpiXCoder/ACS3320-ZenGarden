@@ -2,55 +2,55 @@
 
 @font-face {
     font-family: "ReenieBeenie";
-    src: url("ReenieBeanie-Regular.ttf");
+    src: url("Fonts/ReenieBeanie-Regular.ttf");
 }
 
 @font-face {
     font-family: "MarkerFont";
-    src: url("MarkerFont.ttf");
+    src: url("Fonts/MarkerFont.ttf");
 }
 
 @font-face {
     font-family: "SundayDonuts";
-    src: url("SundayDonuts.ttf");
+    src: url("Fonts/SundayDonuts.ttf");
 }
 
 @font-face {
     font-family: "AmalfiCoast";
-    src: url("AmalfiCoast.ttf");
+    src: url("Fonts/AmalfiCoast.ttf");
 }
 
 @font-face {
     font-family: "Amsterdam";
-    src: url("Amsterdam.ttf");
+    src: url("Fonts/Amsterdam.ttf");
 }
 
 @font-face {
     font-family: "IndieFlower";
-    src: url("IndieFlower.ttf");
+    src: url("Fonts/IndieFlower.ttf");
 }
 
 @font-face {
     font-family: "Caveat";
-    src: url("Caveat.ttf");
+    src: url("Fonts/Caveat.ttf");
 }
 
 @font-face {
     font-family: "Diamond";
-    src: url("Diamond.ttf");
+    src: url("Fonts/Diamond.ttf");
 }
 
 
 .page-wrapper {
     width: 100%;
     min-height: 100vh;
-    background: url('cork.jpeg') repeat;
+    background: url('Images/cork.jpeg') repeat;
     padding: 50px;
     box-sizing: border-box;
 
     /* Border styling */
     border: 20px solid transparent; 
-    border-image: url('wood.jpg') 30% round; 
+    border-image: url('Images/wood.jpg') 30% round; 
     border-image-slice: 10%;
     position:relative;
 }
@@ -58,7 +58,7 @@
 header {
     /* background: #ffffff; 
     background-image: 'bg-header.png'; */
-    background: url('bg2.png') repeat;
+    background: url('Images/bg2.png') repeat;
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.643);
     margin: 20px;
@@ -70,7 +70,7 @@ header {
 }
 
 #zen-summary {
-    background: url('bg-header.png');
+    background: url('Images/bg-header.png');
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.643);
     margin: 20px;
@@ -149,7 +149,7 @@ footer > *::before,
     content: "";
     width: 35px;
     height: 35px;
-    background: url('pin.png') no-repeat center;
+    background: url('Images/pin.png') no-repeat center;
     background-size: contain;
     position: absolute;
     top: 0px;
@@ -494,7 +494,7 @@ footer a {
 /************ sidebar ************/
 
 .page-wrapper::before {
-    content: url('pin-int.png');  /* Replace with the path to your image */
+    content: url('Images/pin-int.png');  /* Replace with the path to your image */
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.489); */
     display: block;
     position: absolute;
@@ -506,7 +506,7 @@ footer a {
 
 
 .page-wrapper::after {
-    content: url('plant.png');  /* Replace with the path to your image */
+    content: url('Images/plant.png');  /* Replace with the path to your image */
     display: block;
     position: absolute;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.609);
