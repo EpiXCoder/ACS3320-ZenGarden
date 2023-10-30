@@ -1,0 +1,8 @@
+#zen-benefits > *:nth-child(4):not(h4),
+#zen-requirements > *:nth-child(4):not(h4),
+#zen-participation > *:nth-child(4):not(h4),
+#zen-preamble > *:nth-child(4):not(h4),
+#zen-explanation > *:nth-child(4):not(h4) {
+    font-family: Caveat;
+    color: rgb(18, 0, 212);
+}

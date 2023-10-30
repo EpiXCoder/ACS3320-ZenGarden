@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Schoolbell');
+
+@font-face {
+    font-family: "ReenieBeenie";
+    src: url("ReenieBeanie-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MarkerFont";
+    src: url("MarkerFont.ttf");
+}
+
+@font-face {
+    font-family: "SundayDonuts";
+    src: url("SundayDonuts.ttf");
+}
+
+@font-face {
+    font-family: "AmalfiCoast";
+    src: url("AmalfiCoast.ttf");
+}
+
+@font-face {
+    font-family: "Amsterdam";
+    src: url("Amsterdam.ttf");
+}
+
+@font-face {
+    font-family: "IndieFlower";
+    src: url("IndieFlower.ttf");
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url("Caveat.ttf");
+}
+
+@font-face {
+    font-family: "Diamond";
+    src: url("Diamond.ttf");
+}
+
+
+.page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: url('cork.jpeg') repeat;
+    padding: 50px;
+    box-sizing: border-box;
+
+    /* Border styling */
+    border: 20px solid transparent; 
+    border-image: url('wood.jpg') 30% round; 
+    border-image-slice: 10%;
+    position:relative;
+}
+
+/* h1 {
+    font-family: 'Schoolbell', arial, serif; 
+} */
+
+header,
+#zen-summary {
+    background: #ffffff; /* light yellow for the post-it note */
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    /* max-width: 300px; */
+    /*transform: rotate(-2deg); /* Slight rotation for natural look */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > h1{
+    /* grid-column: 1 / span 2; Make header span across both columns */
+    font-size: 60px;
+    padding: 0%;
+    margin: 0%;
+}
+
+header > h1 {
+    font-family: MarkerFont;
+    color: blue;
+}
+
+header > h2,
+#zen-summary {
+    font-family: SundayDonuts;
+    color: blue;
+}
+
+
+#zen-summary > * {
+    font-size: 15px;
+    padding: 0%;
+    margin: 0%;
+}
+
+#zen-preamble > h3,
+#zen-explanation > h3,
+#zen-participation > h3,
+#zen-benefits > h3,
+#zen-requirements > h3 {
+    background: #ffffff; /* light yellow for the post-it note */
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    /*transform: rotate(-2deg); /* Slight rotation for natural look */
+    position: relative;
+    z-index: 1;
+    font-family: SundayDonuts;
+    color: blue;
+}
+
+
+
+#zen-benefits > *:not(h3),
+#zen-requirements > *:not(h3),
+#zen-participation > *:not(h3),
+#zen-preamble > *:not(h3),
+#zen-explanation > *:not(h3) {
+    background: #fefabc; /* light yellow for the post-it note */
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    transform: rotate(-2deg); /* Slight rotation for natural look */
+    position: relative;
+    z-index: 1;
+    font-family: 'Schoolbell', arial, serif; 
+
+}
+
+/* #zen-explanation {
+    transform: rotate(2deg);
+} */
+
+/* #zen-participation {
+    transform: rotate(1deg);
+} */
+
+#zen-benefits >* ::before,
+#zen-requirements > *::before,
+#zen-participation > *::before:not(h3),
+#zen-preamble > *::before:not(h3),
+#zen-explanation > *::before:not(h3),
+footer > *::before,
+.wrapper > *::before  {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: url('pin.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+#zen-benefits::after,
+#zen-requirements > *::after,
+#zen-participation > *::after,
+#zen-preamble> *::after,
+#zen-explanation > *::after {
+    content: "";
+    width: 50%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    transform: rotate(-3deg);
+}
+
+/* .sidebar {
+    max-width: 250px;
+    margin-left: 20px;
+} */
+
+#design-selection,
+#design-archives,
+#zen-resources {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transform: rotate(-1deg);
+    position: relative;
+    z-index: 1;
+}
+
+#design-archives {
+    transform: rotate(1deg);
+}
+
+#zen-resources {
+    transform: rotate(0deg);
+}
+
+/* #zen-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+} */
+
+header::before {
+    content: "";
+    width: 50%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    transform: rotate(-2deg);
+}
+
+
+header::after {
+    content: "";
+    width: 50%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -10px;
+    left: 25%;
+    transform: rotate(-2deg);
+}
+
+/*********************/
+
+#zen-preamble > h3::before,
+#zen-participation > h3::before,
+#zen-explanation > h3::before {
+    content: "";
+    width: 50%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -10px;
+    left: 25%;
+    transform: rotate(-3deg);
+}
+
+#zen-preamble > h3::after,
+#zen-participation > h3::after {
+    content: "";
+    width: 50%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    transform: rotate(-3deg);
+}
+
+/***** sideway tape v *******/
+#zen-summary::before,
+#zen-benefits > h3::before {
+    content: "";
+    width: 20px;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: -10px;
+    top: 25%;
+    transform: rotate(-3deg);
+}
+
+#zen-summary::after,
+#zen-benefits > h3::after {
+    content: "";
+    width: 20px;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: -10px;
+    top: 25%;
+    transform: rotate(3deg); /* Note the opposite rotation here for the right side */
+}
+
+/***** sideway tape ^ *******/
+
+#zen-requirements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+}
+#zen-requirements > h3 {
+    grid-column: 1 / span 3;
+}
+
+#zen-preamble {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+}
+#zen-preamble > h3 {
+    grid-column: 1 / span 3;}
+    
+#zen-explanation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+}
+#zen-explanation > h3 {
+    grid-column: 1 / span 3;
+}
+
+#zen-participation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+}
+#zen-participation > h3 {
+    grid-column: 1 / span 3;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+}
+
+/************* rotations ************/
+#zen-benefits > *:nth-child(odd):not(h3),
+#zen-requirements > *:nth-child(odd):not(h3),
+#zen-participation > *:nth-child(odd):not(h3),
+#zen-preamble > *:nth-child(odd):not(h3),
+#zen-explanation > *:nth-child(odd):not(h3) {
+    transform: rotate(-2deg);
+}
+#zen-benefits > *:nth-child(even):not(h3),
+#zen-requirements > *:nth-child(even):not(h3),
+#zen-participation > *:nth-child(even):not(h3),
+#zen-preamble > *:nth-child(even):not(h3),
+#zen-explanation > *:nth-child(even):not(h3) {
+    transform: rotate(3deg);
+}
+/************* rotations ************/
+
+/************* fonts **********/
+#zen-benefits > *:nth-child(2):not(h3),
+#zen-requirements > *:nth-child(2):not(h3),
+#zen-requirements > *:nth-child(6):not(h3),
+#zen-participation > *:nth-child(2):not(h3),
+#zen-preamble > *:nth-child(2):not(h3),
+#zen-explanation > *:nth-child(2):not(h3) {
+    font-family: IndieFlower;
+    color: rgb(145, 148, 148);
+    text-decoration: none;
+}
+
+#zen-benefits > *:nth-child(3):not(h3),
+#zen-requirements > *:nth-child(3):not(h3),
+#zen-requirements > *:nth-child(5):not(h3),
+#zen-participation > *:nth-child(3):not(h3),
+#zen-preamble > *:nth-child(3):not(h3),
+#zen-explanation > *:nth-child(3):not(h3) {
+    font-family: Caveat;
+    color: rgb(18, 0, 212);
+    font-size: larger;
+}
+
+#zen-benefits > *:nth-child(4):not(h4),
+#zen-requirements > *:nth-child(4):not(h4),
+#zen-participation > *:nth-child(4):not(h4),
+#zen-preamble > *:nth-child(4):not(h4),
+#zen-explanation > *:nth-child(4):not(h4) {
+    font-family: Diamond;
+    color: rgb(3, 3, 3);
+    line-height: 1.5em;
+}
+
+/************* fonts **********/
+
+/************* post-it colours **********/
+
+#zen-requirements > *:nth-child(2):not(h3),
+#zen-requirements > *:nth-child(6):not(h3),
+#zen-participation > *:nth-child(2):not(h3),
+#zen-preamble > *:nth-child(2):not(h3),
+#zen-explanation > *:nth-child(2):not(h3) {
+    background: #fefabc; 
+}
+
+#zen-benefits > *:nth-child(3):not(h3),
+#zen-requirements > *:nth-child(3):not(h3),
+#zen-requirements > *:nth-child(5):not(h3),
+#zen-participation > *:nth-child(3):not(h3),
+#zen-preamble > *:nth-child(3):not(h3) {
+    background: #b4f2b9; 
+}
+
+#zen-benefits > *:nth-child(2):not(h3),
+#zen-benefits > *:nth-child(4):not(h4),
+#zen-requirements > *:nth-child(4):not(h4),
+#zen-participation > *:nth-child(4):not(h4),
+#zen-preamble > *:nth-child(4):not(h4),
+#zen-explanation > *:nth-child(4):not(h4) {
+    background: #dfc5ee; 
+}
+
+#zen-preamble > *:nth-child(2):not(h3),
+#zen-participation > *:nth-child(3):not(h3),
+#zen-explanation > *:nth-child(3):not(h3) {
+    background: #bcdefe; 
+}
+
+/************* post-it colours**********/
+
+/********footer**************/
+
+footer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family: MarkerFont;
+    font-size: larger;
+}
+
+/* Styling to create the polaroid effect on each link */
+footer a {
+    display: inline-block;
+    width: 200px;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transform: rotate(-3deg);
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: rgb(0, 45, 247);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px; 
+    border-bottom: 5px solid white; /* adding a white border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 5px white inset; /* adding an inset shadow for the border effect on the top and sides */
+}
+
+/* On hover, slightly increase the rotation for a more dynamic effect */
+footer a:hover {
+    transform: rotate(-5deg);
+}
+
+/* Apply different rotations to create a natural look */
+footer a:nth-child(odd) {
+    transform: rotate(2deg);
+}
+
+footer a:nth-child(odd):hover {
+    transform: rotate(4deg);
+}
+
+/* Background images with gradient to have a white space at the bottom */
+.zen-validate-html {
+    background-image: linear-gradient(transparent 150px, white 150px), url('https://images.unsplash.com/photo-1695157712101-7336d70c373e?auto=format&fit=crop&q=80&w=3387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.zen-validate-css {
+    background-image: linear-gradient(transparent 150px, white 150px), url('https://plus.unsplash.com/premium_photo-1685082778205-8665f65e8c2c?auto=format&fit=crop&q=80&w=3432&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.zen-license {
+    background-image: linear-gradient(transparent 150px, white 150px), url('https://images.unsplash.com/photo-1698245279265-64710170e5ae?auto=format&fit=crop&q=80&w=3270&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.zen-accessibility {
+    background-image: linear-gradient(transparent 150px, white 150px), url('https://media.istockphoto.com/id/508960998/photo/colorful-coral-reef-with-many-fishes.jpg?s=2048x2048&w=is&k=20&c=6xJHbOxaSQB6jmEgwGSRdMktQ_nsZ1JhpZg4e5B7nJg=');
+}
+
+.zen-github {
+    background-image: linear-gradient(transparent 150px, white 150px), url('https://images.unsplash.com/photo-1693335920387-05655159fad4?auto=format&fit=crop&q=80&w=3387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+/* Ensure the image covers the whole link area */
+footer a {
+    background-size: cover, cover;
+    background-position: center, center;
+}
+
+
+/********footer**************/
+
+/************ sidebar ************/
+#design-selection,
+#design-archives,
+#zen-resources
+ {
+    font-family: SchoolBell;
+    max-width: 300px;
+    background: rgb(216, 215, 215);
+
+}
+/************ sidebar ************/
+
+.page-wrapper::before {
+    content: url('pin-int.png');  /* Replace with the path to your image */
+    display: block;
+    position: absolute;
+    top: 600px; 
+    right: 0;
+    transform: scale(0.5);
+    z-index: 1000;  /* Ensures the image appears above other content */
+}
+
+
+.page-wrapper::after {
+    content: url('plant.png');  /* Replace with the path to your image */
+    display: block;
+    position: absolute;
+    top: 1130px; 
+    right: 150px;
+    border: #ffffff solid 15px;
+    transform: rotate(10deg);
+    transform: scale(0.4);
+    z-index: 1000;  /* Ensures the image appears above other content */
+}
