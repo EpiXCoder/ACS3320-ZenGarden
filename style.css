@@ -40,6 +40,9 @@
     src: url("Fonts/Diamond.ttf");
 }
 
+body {
+    min-width: 1300px;
+}
 
 .page-wrapper {
     width: 100%;
@@ -58,7 +61,7 @@
 header {
     /* background: #ffffff; 
     background-image: 'bg-header.png'; */
-    background: url('Images/bg2.png') repeat;
+    background: url('Images/bg-header.png') repeat;
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.643);
     margin: 20px;
