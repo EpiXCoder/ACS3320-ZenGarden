@@ -1,0 +1,3 @@
+# CSS Zen Garden
+
+Welcome to the "Corkboard" theme for CSS Zen Garden! Drawing inspiration from the physical world, this design transports visitors into a realm where digital meets analog. Imagine a wooden corkboard hanging on your wall, adorned with a collection of vibrant post-it notes. Each note carries a unique fragment of the CSS Zen Garden's content, creating a harmonious blend of tradition and modernity.
