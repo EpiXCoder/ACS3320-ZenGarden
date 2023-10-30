@@ -55,18 +55,25 @@
     position:relative;
 }
 
-/* h1 {
-    font-family: 'Schoolbell', arial, serif; 
-} */
-
-header,
-#zen-summary {
-    background: #ffffff; /* light yellow for the post-it note */
+header {
+    /* background: #ffffff; 
+    background-image: 'bg-header.png'; */
+    background: url('bg2.png') repeat;
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.643);
     margin: 20px;
-    /* max-width: 300px; */
-    /*transform: rotate(-2deg); /* Slight rotation for natural look */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#zen-summary {
+    background: url('bg-header.png');
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.643);
+    margin: 20px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -75,7 +82,6 @@ header,
 }
 
 header > h1{
-    /* grid-column: 1 / span 2; Make header span across both columns */
     font-size: 60px;
     padding: 0%;
     margin: 0%;
@@ -104,44 +110,34 @@ header > h2,
 #zen-participation > h3,
 #zen-benefits > h3,
 #zen-requirements > h3 {
-    background: #ffffff; /* light yellow for the post-it note */
+    background: #ffffff; 
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.489);
     margin: 20px;
     max-width: 300px;
-    /*transform: rotate(-2deg); /* Slight rotation for natural look */
     position: relative;
     z-index: 1;
     font-family: SundayDonuts;
     color: blue;
 }
 
-
-
 #zen-benefits > *:not(h3),
 #zen-requirements > *:not(h3),
 #zen-participation > *:not(h3),
 #zen-preamble > *:not(h3),
 #zen-explanation > *:not(h3) {
-    background: #fefabc; /* light yellow for the post-it note */
+    background: #fefabc; 
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     max-width: 300px;
-    transform: rotate(-2deg); /* Slight rotation for natural look */
+    transform: rotate(-2deg); 
     position: relative;
     z-index: 1;
     font-family: 'Schoolbell', arial, serif; 
 
 }
 
-/* #zen-explanation {
-    transform: rotate(2deg);
-} */
-
-/* #zen-participation {
-    transform: rotate(1deg);
-} */
 
 #zen-benefits >* ::before,
 #zen-requirements > *::before,
@@ -178,10 +174,6 @@ footer > *::before,
     transform: rotate(-3deg);
 }
 
-/* .sidebar {
-    max-width: 250px;
-    margin-left: 20px;
-} */
 
 #design-selection,
 #design-archives,
@@ -203,11 +195,6 @@ footer > *::before,
     transform: rotate(0deg);
 }
 
-/* #zen-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; 
-} */
 
 header::before {
     content: "";
@@ -217,7 +204,7 @@ header::before {
     position: absolute;
     bottom: -10px;
     left: 25%;
-    transform: rotate(-2deg);
+    transform: rotate(-3deg);
 }
 
 
@@ -229,7 +216,7 @@ header::after {
     position: absolute;
     top: -10px;
     left: 25%;
-    transform: rotate(-2deg);
+    transform: rotate(1.5deg);
 }
 
 /*********************/
@@ -382,11 +369,12 @@ header::after {
 /************* post-it colours **********/
 
 #zen-requirements > *:nth-child(2):not(h3),
-#zen-requirements > *:nth-child(6):not(h3),
+#zen-requirements > *:last-child:not(h3),
 #zen-participation > *:nth-child(2):not(h3),
 #zen-preamble > *:nth-child(2):not(h3),
 #zen-explanation > *:nth-child(2):not(h3) {
     background: #fefabc; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
 }
 
 #zen-benefits > *:nth-child(3):not(h3),
@@ -395,6 +383,7 @@ header::after {
 #zen-participation > *:nth-child(3):not(h3),
 #zen-preamble > *:nth-child(3):not(h3) {
     background: #b4f2b9; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
 }
 
 #zen-benefits > *:nth-child(2):not(h3),
@@ -404,12 +393,14 @@ header::after {
 #zen-preamble > *:nth-child(4):not(h4),
 #zen-explanation > *:nth-child(4):not(h4) {
     background: #dfc5ee; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
 }
 
 #zen-preamble > *:nth-child(2):not(h3),
 #zen-participation > *:nth-child(3):not(h3),
 #zen-explanation > *:nth-child(3):not(h3) {
     background: #bcdefe; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
 }
 
 /************* post-it colours**********/
@@ -477,7 +468,7 @@ footer a:nth-child(odd):hover {
     background-image: linear-gradient(transparent 150px, white 150px), url('https://media.istockphoto.com/id/508960998/photo/colorful-coral-reef-with-many-fishes.jpg?s=2048x2048&w=is&k=20&c=6xJHbOxaSQB6jmEgwGSRdMktQ_nsZ1JhpZg4e5B7nJg=');
 }
 
-.zen-github {
+footer a[title = "Fork this site on Github"] {
     background-image: linear-gradient(transparent 150px, white 150px), url('https://images.unsplash.com/photo-1693335920387-05655159fad4?auto=format&fit=crop&q=80&w=3387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
@@ -504,6 +495,7 @@ footer a {
 
 .page-wrapper::before {
     content: url('pin-int.png');  /* Replace with the path to your image */
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.489); */
     display: block;
     position: absolute;
     top: 600px; 
@@ -517,6 +509,7 @@ footer a {
     content: url('plant.png');  /* Replace with the path to your image */
     display: block;
     position: absolute;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.609);
     top: 1130px; 
     right: 150px;
     border: #ffffff solid 15px;
